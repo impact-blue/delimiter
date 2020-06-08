@@ -66,6 +66,11 @@ class Delimiter {
    * @public
    */
   render() {
+    setTimeout(() => {
+      // codex-editor__redactor
+      this._element.parentElement.parentElement.parentElement.style.counterReset = 'ce-delimiter-page 0';
+    });
+
     return this._element;
   }
 

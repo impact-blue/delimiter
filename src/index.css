@@ -1,14 +1,15 @@
 .ce-delimiter {
-    line-height: 1.6em;
-    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    opacity: 0.5;
     text-align: center;
+    width: 100%;
 }
 
 .ce-delimiter:before {
     display: inline-block;
-    content: "***";
-    font-size: 30px;
-    line-height: 65px;
-    height: 30px;
+    counter-increment: ce-delimiter-page 1;
+    content: "*** ページ " counter(ce-delimiter-page) " ***";
+    font-size: 24px;
     letter-spacing: 0.2em;
 }
