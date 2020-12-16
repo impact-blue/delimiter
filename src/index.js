@@ -93,6 +93,10 @@ class Delimiter {
     return {};
   }
 
+  async saveAsHTML() {
+    return document.createElement('hr');
+  }
+
   /**
    * Get Tool toolbox settings
    * icon - Tool icon's SVG
